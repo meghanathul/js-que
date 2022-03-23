@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1># Explain var,let and const</h1>
+    <p>1. var :-
+        var is a global scope or function scope variable. <br>
+        we can excess it from enyware in the code. <br>
+        it get allocated memory in global space.</p>
+    <h3>[var variable can updated and re-declared.]</h3>
+    <span>Ex:-
+        var a=5;<br>
+        console.log(a) <br>
+        ANS= 5
+    </span>
+    <p>2. let:-
+        let is block scope variable <br>
+        we cannot excess let variable outsitde the block. <br>
+        let get allocated memory in temporar dead zon.
+    </p>
+    <h3>[let variable can be updated but not re-declared.]</h3>
+    <span>Ex:-{
+        let b=10; <br>
+        console.log(b) <br>
+        } <br>
+        ANS=10
+    </span>
+    <p>3.const:-
+
+        let is block scope variable <br>
+        we cannot excess const variable outsitde the block. <br>
+        const get allocated memory in temporar dead zon.
+    </p>
+    <h3>[const variable can neither be updated nor re-declared.]</h3>
+    <span>Ex:-{
+        const c=20; <br>
+        console.log(c) <br>
+        } <br>
+        ANS=10
+    </span>
+    <hr>
+    <h1> # Expline js Execution</h1>
+    <p>1.compilation:-The code in which the complite code will be converted into machine language.</p>
+    <p>2.Execution :-In this stage the code will be executed means all the function which are written will be executed.
+    </p>
+    <!-- <img src="./js-execution.png" alt="img not found"> -->
+    <hr>
+    <h1># Take a string variable age. <br>
+        a) if age less than 30 , print "Adult" , else "Old", use if else and ternary operatorbr
+        <br>
+        <span>Ex:- var age=30; <br>
+            if (age>30) { <br>
+            console.log('Adult') <br>
+            } else {<br>
+            console.log('old') <br>
+            }
+        </span><br>
+        b) if age less than 15 , print "Young" , age greater than 15 but less than 30 print "Adult" else "Old" by using
+        if else ladder.
+        <br><span>Ex:-var age=5;
+            if (age>15) { <br>
+            console.log('Young');<br>
+            } <br>
+            else if((age<15)&&(age>30)) {<br>
+                console.log('Adult') <br>
+                }<br>
+                else{<br>
+                console.log('old')<br>
+                }</span>
+    </h1>
+    <hr>
+    <h1> # Use switch case and create Week calendar Monday - print 0 , Tuesday - print 1 and so on Sunday - print 6
+       <br> <span>Ex:-var c=6;<br>
+            switch (c) {<br>
+            case(0):{
+            console.log('Monday')
+            }<br>
+            break;<br>
+            case(1):{
+            console.log('Tuesday')
+            }<br>
+            break;<br>
+            case(2):{
+            console.log('Wednesday')
+            }<br>
+            break;<br>
+            case(3):{
+            console.log('Thusday')
+            }<br>
+            break;
+            case(4):{
+            console.log('Friday')<br>
+            }
+            break; <br>
+            case(5):{
+            console.log('Saterday')
+            }<br>
+            break;<br>
+            default:
+            console.log('Sunday')<br>
+            }</span>
+    </h1>
+    <hr>
+    <h1># Hoisting</h1>
+    <p>
+    <ul>
+        <li>In js each and every variable declared using either var let or const get some memory space.</li>
+        <li>if variable is declared using var then it will get memory space in global space so if you will try to excess
+            the variable in this case before initialization it. then it will return undefined. </li>
+        <li>if variable is declared using either let or const then it will get memory space in separate space not in
+            global space. so if you will try to xcess the variable in this case before initializing it then it will
+            return reference error saying you cannot access the variable befor initialization.</li>
+    </ul>
+    </p>
+    <hr>
+    <h1># Print the table of 13 using loop</h1>
+    <span>Ex:-for(i=1;i<=10;i++){ <br>
+         console.log(13+'*'+i+'='+13*i); <br>
+        }</span> <br>
+        <p>
+            ANS: 
+13*1=13 <br>
+13*2=26 <br>
+13*3=39 <br>
+13*4=52 <br>
+13*5=65 <br> 
+13*6=78 <br>
+ 13*7=91 <br>
+13*8=104 <br>
+13*9=117 <br>
+13*10=130 <br>
+        </p>
+    <script src="./script.js"></script>
+</body>
+
+</html>
